@@ -67,6 +67,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 .text-center.first-page{
   background-color: #383d41;
@@ -91,30 +92,41 @@ body {
 .button{
   border: 1px solid red;
 }
-.text-center.second-page{
+.second-page{
   /*background-color: #383d41;
   height: 200px;*/
   height: 100%;
   width: 100%;
   position: relative;
+  background-color: #383d41;
 }
 .dropdown-div{
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa;
   height: 100px;
   width: 300px;
   margin-left: 40%;
   margin-top: 5%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 50px; */
   position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  margin-left: 40%;
+  margin-top: 2%;
 }
 .restaurant-details{
-  background-color: white;
+  /* background-color: white;
   height: 200px;
   width: 750px;
   margin-top: 60%px;
-  margin-left: 20%;
+  margin-left: 20%; */
   position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 750px;
+  margin-top: 300px;
+  margin-left: 20%;
   
   
 }

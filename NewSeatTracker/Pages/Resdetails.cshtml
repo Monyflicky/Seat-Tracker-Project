@@ -77,18 +77,38 @@
             </div>
         </div>
 </div> *@
-<div class="text-center second-page"> 
+<div class="second-page"> 
     <div class="dropdown-div">
             <form method="post">
                 <select id="restaurantSelect" name="restaurantId" class="form-control" asp-for="restaurantId" asp-items=@(new SelectList(items, "id", "name")) onchange="this.form.submit();">
                 <option text-align="center" value="">Pick one</option> 
                 </select>
-            </form>
+            </form> 
     </div> 
-    <br/>
-    <br/>
-    <br/>
     <div class="restaurant-details">
+         <div class="details">
+                    @* <div>
+                         <p>The select Id is: @Model.restaurantId"</p>
+                    </div> *@
+                   @if(@Model.rest!=null){
+                         <div class="div_inside">
+                              <p><span>Resturent name:</span></p>
+                              <p>@Model.rest.name</p>
+                         </div>
+                         <div class="div_inside">
+                             <p><span>Resturent phone number:</span></p>
+                             <p>@Model.rest.phonenumber</p>
+                         </div>
+                         <div class="div_inside">
+                             <p><span>Resturent address:</span></p>
+                             <p>@Model.rest.address</p>
+                         </div>
+                         <div class="div_inside">
+                              <p><span>Resturent website:</span></p>
+                              <p><a href=@Model.rest.name>Visit @Model.rest.name+"com"!</a></p>
+                         </div>
+                }
+                </div>
     </div>
 </div>
 
