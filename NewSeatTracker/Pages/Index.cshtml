@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+// enable tag helpers 
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center first-page">
+    @* <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+    <div class="logo-container">
+        @* <img class="image-logo" src="NewSeatTracker\images\background-photo.jpg" alt="logo image"> *@
+    </div>
+    <div class="logo-page-info">
+        <h1 class="main-title">Is a Seat Available in Any Cafe?</h1>
+        <p class="sub-title"><string>Confirm if a Seat is Avaialble</string><br/> And book the seat before going to the cafe</p>
+        <p><a class="button" id="load-more-content" asp-page="Resdetails">Enter</a></p>
+        <P>In order to preserve a seat</P>
+    </div>
+</div>

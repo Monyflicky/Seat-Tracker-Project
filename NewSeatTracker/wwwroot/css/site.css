@@ -1,0 +1,142 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+  height: 100%;
+  min-height: 100%;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+  position: relative;
+  /*min-height: 100%;
+}*/
+
+body {
+  /* Margin bottom by footer height */
+  /*margin-bottom: 60px;*/
+  /*min-height: 200px;*/
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.text-center.first-page{
+  background-color: #383d41;
+  height: 100%;
+  padding-top: 50px;
+}
+.logo-container{
+  height: 200px;
+  width: 500px;
+  background-image: url("/images_tobeused/background-photo.jpg");
+  /*background-color: transparent;*/
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  margin: 0 30%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.logo-page-info{
+  color: white;
+}
+.button{
+  border: 1px solid red;
+}
+.text-center.second-page{
+  /*background-color: #383d41;
+  height: 200px;*/
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.dropdown-div{
+  background-color: #f8f9fa;
+  height: 100px;
+  width: 300px;
+  margin-left: 40%;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 50px;
+  position: absolute;
+}
+.restaurant-details{
+  background-color: white;
+  height: 200px;
+  width: 750px;
+  margin-top: 60%px;
+  margin-left: 20%;
+  position: absolute;
+  
+  
+}
+.inner_restaurant_details{
+  /*background-color: #f8f9fa;*/
+  height: 150px;
+  width: 700px;
+  margin-left: 25%;
+  /*padding-top: 200px;*/
+  border-style: solid;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.div_inside {
+   padding: 15px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
