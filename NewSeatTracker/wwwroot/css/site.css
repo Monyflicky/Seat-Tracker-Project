@@ -29,7 +29,7 @@ a {
 html {
   font-size: 14px;
   height: 100%;
-  min-height: 100%;
+  margin: 0px;
 }
 @media (min-width: 768px) {
   html {
@@ -61,18 +61,15 @@ button.accept-policy {
 }*/
 
 body {
-  /* Margin bottom by footer height */
-  /*margin-bottom: 60px;*/
-  /*min-height: 200px;*/
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%; 
   width: 100%;
 }
 .text-center.first-page{
   background-color: #383d41;
+  /*padding-top: 50px;*/
   height: 100%;
-  padding-top: 50px;
 }
 .logo-container{
   height: 200px;
@@ -98,45 +95,62 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: #383d41;
+  /*background-color: #383d41;*/
 }
 .dropdown-div{
-  /* background-color: #f8f9fa;
-  height: 100px;
-  width: 300px;
-  margin-left: 40%;
-  margin-top: 5%;
-  text-align: center;
-  padding-top: 50px; */
   position: absolute;
   background-color: white;
-  height: 200px;
+  height: 50px;
   width: 200px;
   margin-left: 40%;
   margin-top: 2%;
+  border: 10px solid #0c0c0bfb;
 }
 .restaurant-details{
-  /* background-color: white;
-  height: 200px;
-  width: 750px;
-  margin-top: 60%px;
-  margin-left: 20%; */
   position: absolute;
   background-color: white;
   height: 200px;
   width: 750px;
-  margin-top: 300px;
+  margin-top: 150px;
   margin-left: 20%;
-  
-  
+  border: 10px solid #0c0c0bfb;
 }
-.inner_restaurant_details{
-  /*background-color: #f8f9fa;*/
-  height: 150px;
-  width: 700px;
+.restaurant-image{
+  position: absolute;
+  height: 300px;
+  width: 640px;
+  margin-top: 450px;
+  margin-left: 30%;
+  border: 10px solid #0c0c0bfb;
+}
+.rest_image{
+  max-width: 100%;
+  max-height: 100%;
+}
+.outer_button_reserve_seat{
+  position: absolute;
+  height: 50px;
+  width: 350px;
+  margin-top: 800px;
+  margin-left: 40%;
+  border-radius: 1px;
+}
+.button_reserve_seat{
+  position: absolute;
+  background-color: teal;
+  height: 50px;
+  width: 350px;
+  /*margin-top: 800px;*/
   margin-left: 25%;
-  /*padding-top: 200px;*/
-  border-style: solid;
+  text-align: center;
+  padding: 10Px;
+  font-size: 20px;
+  color: white;
+  border-radius: 1px;
+}
+.button_2 a:link, .button_2 a:visited, .button_2 a:hover, .button_2 a:active{
+  text-decoration: none;
+  color: white !important;
 }
 .details {
   display: flex;
@@ -144,6 +158,13 @@ body {
 }
 .div_inside {
    padding: 15px;
+}
+.end_page{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  margin-top: 1000px;
+  margin-left: 0px;
 }
 .footer {
   position: absolute;

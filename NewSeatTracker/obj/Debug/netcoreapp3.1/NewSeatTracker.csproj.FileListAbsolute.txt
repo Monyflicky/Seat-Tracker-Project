@@ -19,6 +19,7 @@ C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.TagHelpers.input.cache
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.TagHelpers.output.cache
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.RazorCoreGenerate.cache
+C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\Razor\Pages\Confirmation.cshtml.g.cs
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs

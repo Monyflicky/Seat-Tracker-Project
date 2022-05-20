@@ -8,75 +8,7 @@
 }
 @* <script type="text/javascript" src="~/Scripts/jquery-3.1.1.min.js"></script> *@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-@* <script type="text/javascript">
-    $(function () {
-    //Your code
-        $("#restaurantSelect").change(function(){
-            var selectedValue = $("#restaurantSelect").val(); //this gives us the value
-            $("#innerdisplay_div").val(selectedValue);
-            @* $.ajax({
 
-            }); 
-        });
-    });
-</script> 
-<script type="text/javascript">
-        $("#restaurantSelect").change(function(){
-            var selectedValue = $("#restaurantSelect").val(); //this gives us the value
-            $("#innerdisplay_div").val(selectedValue);
-            @* $.ajax({
-
-            }); 
-        }); 
-</script>*@
-
-
-     @* <div class="dropdown-div">
-          <select id="restaurantSelect" class="form-control" asp-for="restaurantId" asp-items="@(new SelectList(items, "Id", "name"))" onchange="this.form.submit();">
-           @* <option value="">Pick one</option> 
-          </select>
-    </div>  *@
-    @* @Html.LabelFor(x => Model.restaurantName, htmlAttributes: new {@class = "control-label col-md-2"})
-    <div class="form-group">
-          @Html.DropDownListFor(x => Model.restaurantName, new SelectList(items, "Id", "name"), 
-          "Select Restaurant", htmlAttributes: new {@class = "form-control", id="restaurantSelect"})
-    </div> *@
- @* <div class="text-center second-page">   
-    <div class="dropdown-div">
-            <form method="post">
-                <select id="restaurantSelect" name="restaurantId" class="form-control" asp-for="restaurantId" asp-items=@(new SelectList(items, "id", "name")) onchange="this.form.submit();">
-                <option text-align="center" value="">Pick one</option> 
-                </select>
-            </form>
-    </div> 
-    <div id="display-div" class="text-center restaurant-details">
-            <div id="innerdisplay_div" class="inner_restaurant_details">
-                <div class="details">
-                    @* <div>
-                         <p>The select Id is: @Model.restaurantId"</p>
-                    </div> 
-                   @if(@Model.rest!=null){
-                         <div class="div_inside">
-                              <p><span>Resturent name:</span></p>
-                              <p>@Model.rest.name</p>
-                         </div>
-                         <div class="div_inside">
-                             <p><span>Resturent phone number:</span></p>
-                             <p>@Model.rest.phonenumber</p>
-                         </div>
-                         <div class="div_inside">
-                             <p><span>Resturent address:</span></p>
-                             <p>@Model.rest.address</p>
-                         </div>
-                         <div class="div_inside">
-                              <p><span>Resturent website:</span></p>
-                              <p><a href=@Model.rest.name>Visit @Model.rest.name+"com"!</a></p>
-                         </div>
-                }
-                </div>
-            </div>
-        </div>
-</div> *@
 <div class="second-page"> 
     <div class="dropdown-div">
             <form method="post">
@@ -110,6 +42,23 @@
                 }
                 </div>
     </div>
+    <div class="restaurant-image">
+        @if(@Model.rest!=null){
+             <img class="rest_image" src=
+"/images_tobeused/RestaurantAvailability_2_640x470_640x300 - Copy.jpg"
+        alt = "Restaurant Avaiability Image" />
+        }
+    </div>
+    <div class="outer_button_reserve_seat">
+        @if(@Model.rest!=null){
+            <div class="button_reserve_seat">
+               <p><a class="button_2" asp-page="Confirmation">RESERVE NOW!</a></p>
+           </div>
+        }
+    </div>
+    <div class="end_page">
+      <p>
+
+      </p>
+    </div>
 </div>
-
-

@@ -14432,6 +14432,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Owner\\Documents\\New Seat Tracker\\NewSeatTracker\\Pages\\Confirmation.cshtml",
+      "TargetPath": "Pages\\Confirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Owner\\Documents\\New Seat Tracker\\NewSeatTracker\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
