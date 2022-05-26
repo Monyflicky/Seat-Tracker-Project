@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Collections.Concurrent;
 using System;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 //using System.Web.Mvc;
 
 
@@ -22,7 +24,6 @@ namespace NewSeatTracker.Pages
        public int restaurantId {get; set;} = -1;
        public List<Restaurant> Restaurants {get; set;} //this gets all the lists
       // public IEnumerable<SelectListItem> Restaurants { get; set; }
-
       public Restaurant rest {get; set;}
 
        public ConcurrentDictionary<int, Restaurant> restDictById {get; set;} //keyes dictionaries by id's
@@ -32,13 +33,6 @@ namespace NewSeatTracker.Pages
         {
             _logger = logger;
         }
-
-        public void OnGet()
-        {
-    
-          Restaurants = GetRestaurants();
-         
-        }
         public void OnPost()
         {
             restDictById = getDictById();
@@ -46,10 +40,22 @@ namespace NewSeatTracker.Pages
             restaurantId = Convert.ToInt32(number);
             rest = restDictById[restaurantId];
             Restaurants = GetRestaurants();
+            TempData["rest"] = JsonConvert.SerializeObject(rest);
 
+            //return new RedirectToPageResult("Resdetails");
         }
-
-
+        public void OnGet()
+        {
+         //Restaurant r =JsonConvert.DeserializeObject<Restaurant>(TempData["rest"].ToString());
+         //rest = r;
+         Restaurants = GetRestaurants();
+        }
+        public IActionResult OnPostReserve()
+        {
+            ///Restaurant r =JsonConvert.DeserializeObject<Restaurant>(TempData["rest"].ToString());
+            //TempData["rest_two"] = JsonConvert.SerializeObject(r);
+            return RedirectToPage("Confirmation");
+        }
         public List<Restaurant> GetRestaurants(){
             List<Restaurant> restaurants = new List<Restaurant>();
             restaurants.Add(new Restaurant{
@@ -63,7 +69,9 @@ namespace NewSeatTracker.Pages
                                 province ="ON",
                                 postalcode ="M56 657"
                         },
-                webLink ="https://hotblack-coffee.com/"
+                webLink ="https://hotblack-coffee.com/",
+                capacity = 30,
+                currentFilledSeats = 30
             });
             restaurants.Add(new Restaurant{
                 id = 3,
@@ -76,7 +84,9 @@ namespace NewSeatTracker.Pages
                                 province ="ON",
                                 postalcode ="CT5 G56"
                         },
-                webLink ="https://www.ubereats.com/ca/brand/starbucks?utm_source=starbucks_can&utm_medium=brandpage&utm_content=Search&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5j3jp5YFMJHkXiJix-VqNvuYeeZ1D99pxTNwn6O806Cuf-C3qmSOZ8aAoXLEALw_wcB"
+                webLink ="https://www.ubereats.com/ca/brand/starbucks?utm_source=starbucks_can&utm_medium=brandpage&utm_content=Search&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5j3jp5YFMJHkXiJix-VqNvuYeeZ1D99pxTNwn6O806Cuf-C3qmSOZ8aAoXLEALw_wcB",
+                capacity = 20,
+                currentFilledSeats = 10
             });
             restaurants.Add(new Restaurant{
                 id = 1,
@@ -89,7 +99,24 @@ namespace NewSeatTracker.Pages
                                 province ="ON",
                                 postalcode ="M56 78T"
                         },
-                webLink ="http://www.jimmyscoffee.ca/"
+                webLink ="http://www.jimmyscoffee.ca/",
+                capacity = 25,
+                currentFilledSeats = 20
+            });
+            restaurants.Add(new Restaurant{
+                id = 1,
+                name = "Java Joe's",
+                phonenumber = "45673454646",
+                address = new Address{
+                                street_number = "153",
+                                street_name = "Dundas St West",
+                                city = "Toronto",
+                                province ="ON",
+                                postalcode ="M56 78T"
+                        },
+                webLink ="http://www.jimmyscoffee.ca/",
+                capacity = 15,
+                currentFilledSeats = 15
             });
 
         return restaurants;
@@ -115,10 +142,12 @@ namespace NewSeatTracker.Pages
         public string phonenumber {get; set;}
         [Required]
         public Address address {get; set;}
-
         [Required]
         public string webLink {get; set;}
-
+        [Required]
+        public int capacity {get; set;}
+        [Required]
+        public int currentFilledSeats {get; set;}
     }
 
     public class Address{
@@ -131,43 +160,4 @@ namespace NewSeatTracker.Pages
         [Required]
         public string postalcode {get; set;}
     }
-    /*public static class SelectList
-    {
-        public static List<SelectListItem> Create<TEnum>
-            (bool includeEmptyOption = false)
-        {
-            var type = typeof(TEnum);
-            if (!type.IsEnum)
-            {
-                throw new ArgumentException(
-                    "type must be an enum",
-                    nameof(type)
-                );
-            }
-
-            var result =
-                Enum
-                    .GetValues(type)
-                    .Cast<TEnum>()
-                    .Select(v => 
-                        new SelectListItem(
-                        v.ToString(),
-                        v.ToString()
-                        )
-                    )
-                    .ToList();
-
-            if (includeEmptyOption)
-            {
-                // Insert the empty option
-                // at the beginning
-                result.Insert(
-                    0, 
-                    new SelectListItem("Pick An Option", "")
-                );
-            }
-
-            return result;
-        }
-    }*/
 }

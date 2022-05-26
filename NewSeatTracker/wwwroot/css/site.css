@@ -166,6 +166,42 @@ body {
   margin-top: 1000px;
   margin-left: 0px;
 }
+.third_page{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: red;
+}
+.acceptance-info{
+  position: absolute;
+  height: 100px;
+  width: 400px;
+  text-align: center;
+  font-size: bold;
+  margin-left: 40%;
+  margin-top: 50px;
+  border: 10px solid #0c0c0bfb;
+  padding: 20px;
+}
+.thanks-info{
+  position: absolute;
+  background-color: white;
+  height: 100px;
+  width: 400px;
+  margin-left: 40%;
+  margin-top: 300px;
+  border: 10px solid #0c0c0bfb;
+  text-align: center;
+  font-size: bold;
+  padding: 20px;
+}
+.end_page_two{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  margin-top: 500px;
+  margin-left: 0px;
+}
 .footer {
   position: absolute;
   bottom: 0;
