@@ -100,11 +100,11 @@ namespace NewSeatTracker.Pages
                                 postalcode ="M56 78T"
                         },
                 webLink ="http://www.jimmyscoffee.ca/",
-                capacity = 25,
-                currentFilledSeats = 20
+                capacity = 20,
+                currentFilledSeats = 5
             });
             restaurants.Add(new Restaurant{
-                id = 1,
+                id = 4,
                 name = "Java Joe's",
                 phonenumber = "45673454646",
                 address = new Address{

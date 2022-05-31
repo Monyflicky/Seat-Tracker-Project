@@ -34,11 +34,12 @@
                          </div>
                          <div class="div_inside">
                              <p><span>Resturent address:</span></p>
-                             <p>@Model.rest.address</p>
+                             <p>@Model.rest.address.street_number @Model.rest.address.street_name 
+                                 @Model.rest.address.city @Model.rest.address.province @Model.rest.address.postalcode</p>
                          </div>
                          <div class="div_inside">
                               <p><span>Resturent website:</span></p>
-                              <p><a href=@Model.rest.name>Visit @Model.rest.name+"com"!</a></p>
+                              <p><a href=@Model.rest.name>Visit @Model.rest.name + "com"</a></p>
                          </div>
                 }
                 </div>
@@ -56,7 +57,6 @@
                 <form method="post">
                     <input type="submit" value="RESERVE NOW!" asp-page-handler="RESERVE"/>
                 </form>
-               @* <p><a class="button_2" asp-page="Confirmation" asp-page-handler="Reserve">RESERVE NOW!</a></p>  *@
             </div>
         }
     </div>
