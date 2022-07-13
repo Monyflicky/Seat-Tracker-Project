@@ -34,7 +34,32 @@
             @RenderBody()
         </main>
     </div>*@
-    @RenderBody()
+    <nav class="navbar">
+        <!--logo-->
+        <div class="logo">
+            <h1>Seat Tracker</h1>
+        </div>
+        <!--navigation manu-->
+        <div class="div_links">
+            <ul class="nav-links">
+                <div class="menu">
+                    <div class="div_boxes"><li><a asp-page="Index">Home</a></li></div>
+                    <div class="div_boxes"><li><a asp-page="Resdetails">Restaurant Details</a></li></div>
+                    <div class="div_boxes"><li><a asp-page="Confirmation">Confirmation</a></li></div>
+                </div>
+           </ul>
+        </div>
+        
+    </nav>
+    @RenderSection("Upper", required: false)
+    <section class="main_section">
+        @RenderBody()
+    </section>
+    @RenderSection("Mid", required: false)
+    <footer class="footer">
+
+    </footer>
+    
 
     @* <footer class="border-top footer text-muted">
         <div class="container">

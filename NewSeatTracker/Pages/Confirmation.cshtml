@@ -5,17 +5,58 @@
 @{
     ViewData["Title"] = "Third page";
 }
-
 <div class="third_page">
-    <div class="acceptance-info">
-        <p>@Model.acceptanceMessage</p>
-    </div>
+      <div class="main_box">
+            <div class="countdown_box">
+               <p id="countdown_timer"></p>
+               <p id="countdown_msg"></p>
+            </div>
+            <div class="acceptance-info">
+                <p id="acceptance_msg">@Model.acceptanceMessage</p>
+            </div>
+    </div> 
+    
     <div class="thanks-info">
         <p>@Model.thankNoteMessage</p>
     </div>
     <div class="end_page_two">
       <p>
-
+        
       </p>
     </div>
 </div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>  
+@* <script src="path/to/js/folder/timer.js"></script> *@
+
+<script>
+     if(@Model.isVacant.ToString().ToLower()){
+        const startingMinutes = 1;
+        let time = startingMinutes * 60;
+        let refreshIntervalId = setInterval(updateTimer, 1000); //update every 1 second
+        
+
+        const countdownEl = document.getElementById('countdown_timer');
+        document.getElementById('countdown_msg').innerHTML = "Reservation expires after One minute";
+
+        function updateTimer()
+        {
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+
+            seconds = seconds < 0 ? '0' + seconds : seconds;
+
+            countdownEl.innerHTML = `${minutes} : ${seconds}`; 
+
+            time--;
+
+            if (time < 0) { //stop the setInterval whe time = 0 for avoid negative time
+                    clearInterval(refreshIntervalId);
+                    document.getElementById('countdown_msg').innerHTML = "Reservation has Expired!";
+                    document.getElementById('acceptance_msg').innerHTML = "We apologize You lost your spot!"
+            } 
+        }
+     }
+    
+</script>
