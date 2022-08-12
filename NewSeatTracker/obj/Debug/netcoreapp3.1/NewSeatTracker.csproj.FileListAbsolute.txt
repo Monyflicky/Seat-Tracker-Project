@@ -320,3 +320,4 @@ C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\Razor\Pages\mapLocation.cshtml.g.cs

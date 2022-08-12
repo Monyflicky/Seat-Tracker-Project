@@ -10,7 +10,9 @@
 @section Upper
 {
     <div class="upper_section">
-        
+        <div class="m_canvas">
+            <canvas width = "500px" height = "100px"  id = "my_Canvas"></canvas>
+        </div>
     </div>
 }
 @* <script type="text/javascript" src="~/Scripts/jquery-3.1.1.min.js"></script> *@
@@ -45,6 +47,17 @@
                               <p><span>Resturent website: <a href=@Model.rest.name>Visit @Model.rest.name + "com"</a></span></p>
                               
                          </div>
+                         <div class="div_inside">
+                              @* <asp:LinkButton ID="LinkButton1" runat="server" OnClientClick="javascript:window.open('https://websitename.org/form/formname.aspx?sessionid=<%= txtsession.value %>','','left=250px, top=245px, width=700px, height=450px, scrollbars=no, status=no, resizable=no');return false;">add user</asp:LinkButton> *@
+                               @* <p><span>Resturent website: <a class="button" id="locationId" asp-page="mapLocation">Location</a></span></p> *@
+                               @if(@Model.rest != null){
+                
+                                    <form method="post">
+                                        <input type="submit" value="Location" asp-page-handler="Reserve2"/>
+                                    </form>
+            
+                              }
+                         </div>
                 }
                 </div>
     </div>
@@ -59,7 +72,7 @@
         @if(@Model.rest != null){
             <div class="button_reserve_seat">
                 <form method="post">
-                    <input type="submit" value="RESERVE NOW!" asp-page-handler="RESERVE"/>
+                    <input type="submit" value="RESERVE NOW!" asp-page-handler="Reserve"/>
                 </form>
             </div>
         }
@@ -70,8 +83,8 @@
       </p>
     </div>
 </div>
-@section Mid
+@* @section Mid
 {
     <div class="mid-section">
     </div>
-}
+} *@

@@ -110,7 +110,7 @@ a:active { text-decoration: none; }
 
 .main_section{
   background-color: #C4AF6D;
-  height: 950px;
+  height: 1150px;
   position: relative;
 }
 .footer{
@@ -123,16 +123,10 @@ a:active { text-decoration: none; }
   background-color: #EAD7D2;
   backdrop-filter: blur(10px);
 }
-.mid-section{
-  height: 200px;
-  background-color: #FCE0BB;
-  backdrop-filter: blur(10px);
-  position: relative;
-}
 .div_button{
   position: absolute;
-  margin-left: 40%;
-  margin-top: 6%;
+  margin-left: 20%;
+  margin-top: 15%;
   width: 200px;
   height: 90px;
   text-align: center;
@@ -172,7 +166,7 @@ div.div_boxes :hover{
 }
 .text-center.first-page{
   /*background-color: #383d41;*/
-  background-color: #FCA89A;
+  background-color: #C4AF6D;
   /*padding-top: 50px;*/
   height: 100%;
   
@@ -191,13 +185,14 @@ div.div_boxes :hover{
 }
 .logo-page-info{
   color: white;
+  margin-top: 10%;
 }
 .second_pic{
-  background-image: url("/images_tobeused/restaurantphoto.jpg");;
-  height: 500px;
+  /*background-image: url("/images_tobeused/restaurantphoto.jpg");*/
+  height: 200px;
   width: 550px;
-  margin-left: 28%;
-  margin-top: 30px;
+  margin-left: 20%;
+  
 
 }
 .logo-page-info.two{
@@ -223,7 +218,7 @@ div.div_boxes :hover{
 .restaurant-details{
   position: absolute;
   background-color: white;
-  height: 200px;
+  height: 217px;
   width: 750px;
   margin-top: 150px;
   margin-left: 20%;

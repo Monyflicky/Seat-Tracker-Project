@@ -56,6 +56,12 @@ namespace NewSeatTracker.Pages
             //TempData["rest_two"] = JsonConvert.SerializeObject(r);
             return RedirectToPage("Confirmation");
         }
+        public IActionResult OnPostReserve2()
+        {
+            ///Restaurant r =JsonConvert.DeserializeObject<Restaurant>(TempData["rest"].ToString());
+            //TempData["rest_two"] = JsonConvert.SerializeObject(r);
+            return RedirectToPage("mapLocation");
+        }
         public List<Restaurant> GetRestaurants(){
             List<Restaurant> restaurants = new List<Restaurant>();
             restaurants.Add(new Restaurant{
@@ -67,7 +73,9 @@ namespace NewSeatTracker.Pages
                                 street_name = "Young Avenue",
                                 city = "Toronto",
                                 province ="ON",
-                                postalcode ="M56 657"
+                                postalcode ="M56 657",
+                                lat = 43.65044,
+                                lon = -79.38864
                         },
                 webLink ="https://hotblack-coffee.com/",
                 capacity = 30,
@@ -82,7 +90,9 @@ namespace NewSeatTracker.Pages
                                 street_name = "University Avenue",
                                 city = "Toronto",
                                 province ="ON",
-                                postalcode ="CT5 G56"
+                                postalcode ="CT5 G56",
+                                lat = 46.65044,
+                                lon = -78.38864
                         },
                 webLink ="https://www.ubereats.com/ca/brand/starbucks?utm_source=starbucks_can&utm_medium=brandpage&utm_content=Search&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5j3jp5YFMJHkXiJix-VqNvuYeeZ1D99pxTNwn6O806Cuf-C3qmSOZ8aAoXLEALw_wcB",
                 capacity = 20,
@@ -97,7 +107,9 @@ namespace NewSeatTracker.Pages
                                 street_name = "Spadina Avenue",
                                 city = "Toronto",
                                 province ="ON",
-                                postalcode ="M56 78T"
+                                postalcode ="M56 78T",
+                                lat = 50.65044,
+                                lon = -79.38864
                         },
                 webLink ="http://www.jimmyscoffee.ca/",
                 capacity = 20,
@@ -112,13 +124,50 @@ namespace NewSeatTracker.Pages
                                 street_name = "Dundas St West",
                                 city = "Toronto",
                                 province ="ON",
-                                postalcode ="M56 78T"
+                                postalcode ="M56 78T",
+                                lat = 33.65044,
+                                lon = -89.38864
                         },
                 webLink ="http://www.jimmyscoffee.ca/",
                 capacity = 15,
                 currentFilledSeats = 15
             });
-
+            //two additional restaurants
+            restaurants.Add(new Restaurant{
+                id = 4,
+                name = "Vereda Central Coffee Roaster",
+                phonenumber = "6479782308",
+                address = new Address{
+                                street_number = "153",
+                                street_name = "Adelaide street",
+                                city = "Toronto",
+                                province ="ON",
+                                postalcode ="M56 5T6",
+                                lat = 20.65044,
+                                lon = -99.38864
+                        },
+                webLink ="https://www.veredacentral.ca/",
+                capacity = 35,
+                currentFilledSeats = 0
+            });
+            
+            restaurants.Add(new Restaurant{
+                id = 4,
+                name = "Dineen Coffee Co.",
+                phonenumber = "4567342989",
+                address = new Address{
+                                street_number = "153",
+                                street_name = "yonge st",
+                                city = "Toronto",
+                                province ="ON",
+                                postalcode ="M56 3T6",
+                                lat = 17.65044,
+                                lon = -71.38864
+                        },
+                webLink ="https://www.dineencoffee.com/",
+                capacity = 15,
+                currentFilledSeats = 15
+            });
         return restaurants;
         }
 
@@ -159,5 +208,9 @@ namespace NewSeatTracker.Pages
         public string province {get; set;}
         [Required]
         public string postalcode {get; set;}
+        [Required]
+        public double lon {get; set;}
+        [Required]
+        public double lat {get; set;}
     }
 }

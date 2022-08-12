@@ -1,0 +1,43 @@
+@page
+@using Newtonsoft.Json
+@model mapLocationModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Details page";
+}
+
+@section Upper
+{
+    <div class="upper_section">
+        <div class="m_canvas">
+            <canvas width = "500px" height = "100px"  id = "my_Canvas"></canvas>
+        </div>
+    </div>
+}
+@* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+<script>
+    // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: @Model.rest.address.lat, lng: @Model.rest.address.lon };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+        }
+
+window.initMap = initMap;
+</script>
+<div class="text-center first-page" id="map">
+    
+</div> 
