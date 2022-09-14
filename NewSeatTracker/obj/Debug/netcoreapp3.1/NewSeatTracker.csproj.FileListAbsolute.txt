@@ -1,6 +1,5 @@
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\NewSeatTracker.exe
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\NewSeatTracker.deps.json
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\NewSeatTracker.runtimeconfig.json
@@ -10,7 +9,6 @@ C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\NewSeatTracker.Views.dll
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\NewSeatTracker.Views.pdb
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.csprojAssemblyReference.cache
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.AssemblyInfoInputs.cache
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.AssemblyInfo.cs
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.csproj.CoreCompileInputs.cache
@@ -34,7 +32,6 @@ C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.Views.pdb
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.csproj.CopyComplete
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\staticwebassets\NewSeatTracker.StaticWebAssets.Manifest.cache
-C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\staticwebassets\NewSeatTracker.StaticWebAssets.xml
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.dll
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.pdb
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.genruntimeconfig.cache
@@ -321,3 +318,5 @@ C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
 C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\Razor\Pages\mapLocation.cshtml.g.cs
+C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.csproj.AssemblyReference.cache
+C:\Users\Owner\Documents\New Seat Tracker\NewSeatTracker\obj\Debug\netcoreapp3.1\NewSeatTracker.GeneratedMSBuildEditorConfig.editorconfig

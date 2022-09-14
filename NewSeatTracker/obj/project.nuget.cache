@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gW56IVTSMnFhYs22VoWT15W14Dc3E55P62I8WHYTFTOqi+N0BXrDaN32yBTgZgFlaQ66ddebyjdP+P4I69enrA==",
+  "dgSpecHash": "Mh2EjZoRKIRSO1glpqZ0Thc2Upm2CnPekQlCzTL3NZdIu4ZnED/+xFU0xnadCcO9uRhYBd8T4OSnU8lPgAzsvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Owner\\Documents\\New Seat Tracker\\NewSeatTracker\\NewSeatTracker.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Owner\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Owner\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }

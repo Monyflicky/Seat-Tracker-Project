@@ -5,29 +5,45 @@
 @{
     ViewData["Title"] = "Home page";
 }
-@section Upper
+@* @section Upper
 {
     <div class="upper_section">
         <div class="m_canvas">
             <canvas width = "500px" height = "100px"  id = "my_Canvas"></canvas>
         </div>
     </div>
-}
+} *@
 @section Scripts
 {
     <script src="~/js/site.js" asp-append-version="true"></script>
 }
  <div class="text-center first-page">
-    <div class="logo-container">
+    @* <div class="logo-container">
     </div>
     <div class="logo-page-info">
-        <h4 class="main-title">Seat Tracker is a Web application that allows you to book a seat at any cafe of your choice if you are interested in dinning in. The cafe will signal you once your seat has been resrved. However your seat can be resved for you for a specific period of time after which you are bound to lose your reserved seat. If you want to go ahead and reearve your seat please click Enter</h4>
+        <h1 color="black">Saving Time Is Priority</h1>
+        <h4 class="main-title" color="black">Save your time by using our Web application to reserve your seats at your favorite Cafe. Seat Tracker reserves your seat for you. To be able to Reserve please proceed to Enter</h4>
+
     </div>
     <div class="second_pic">
         <div class="div_button">
             <p><a class="button" id="load-more-content" asp-page="Resdetails">ENTER</a></p>
         </div>
+    </div> *@
+    <div class="box first_box">
+           <div class="msg">Seat Tracker Application For
+           </div>
+            <h2 class="msg-two">Reserving Seats at any Cafe or Restaurant of your choice</h2>
+           <div class="div_button">
+            <p><a class="button" id="load-more-content" asp-page="Resdetails">ENTER</a></p>
+        </div>
     </div>
+    <div class="box second_box">
+
+    </div>
+    <div class="box third_box"> 
+
+    </div> 
 </div> 
 
 
